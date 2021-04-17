@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+  <meta charset="utf-8">
+  <title>1-я частная лепная мастерская</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+  <div class="mobile-menu__wrap">
+    <div class="mobile-menu__head">
+      <h4>Категории</h4>
+    </div>
+    <ul class="menu">
+      <li class="dropdown"><a href="#" class="menu-link dropdown-toggle">Карнизы</a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Карнизы гладкие</a>
+          <a href="#" class="dropdown-item">Карнизы световые</a>
+        </div>
+      </li>
+      <li class="dropdown"><a href="#" class="menu-link dropdown-toggle">Молдинги</a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Карнизы гладкие</a>
+          <a href="#" class="dropdown-item">Карнизы световые</a>
+        </div>
+      </li>
+      <li class="dropdown"><a href="#" class="menu-link dropdown-toggle">Плинтуса</a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Карнизы гладкие</a>
+          <a href="#" class="dropdown-item">Карнизы световые</a>
+        </div>
+      </li>
+      <li><a href="#" class="menu-link">Рамки</a></li>
+      <li><a href="#" class="menu-link">Середники</a></li>
+      <li><a href="#" class="menu-link">Узоры</a></li>
+      <li><a href="#" class="menu-link">Розетки</a></li>
+    </ul>
+
+    <div class="header-info">
+      <div class="header-box">
+        <a href="tel:+74957777777" class="phone">+7 (495) 777-77-77</a>
+        <div class="schedule">
+          <span>Пн-Пт 9:00-18:00</span>
+        </div>
+      </div>
+
+      <ul class="list-social">
+        <li><a href="#" class="telegram-link">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#telegram"></use>
+          </svg>
+        </a></li>
+        <li><a href="#">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#whatsapp"></use>
+          </svg>
+        </a></li>
+        <li><a href="#">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#viber"></use>
+          </svg>
+        </a></li>
+      </ul>
+    </div>
+
+
+    <a href="#" class="header-links">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#user"></use>
+      </svg>
+      <span class="header-links__text">Войти</span>
+    </a>
+    <ul class="home-menu">
+      <li><a href="#">Доставка и оплата</a></li>
+      <li><a href="#">Монтаж</a></li>
+      <li><a href="#">О нас</a></li>
+      <li><a href="#">Наши работы</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </div>
+</div>
+
+<header>
+  <div class="header-top">
+    <div class="container">
+      <ul class="home-menu">
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">Монтаж</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Наши работы</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="header-center">
+    <div class="container">
+      <div class="btn-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+      <div class="header-info">
+        <div class="header-box">
+          <a href="tel:+74957777777" class="phone">+7 (495) 777-77-77</a>
+          <div class="schedule">
+            <div class="schedule-icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#time"></use>
+              </svg>
+            </div>
+            <span>Пн-Пт 9:00-18:00</span>
+          </div>
+        </div>
+
+        <div class="social-wrap">
+          <p>Напишите нам</p>
+          <ul class="list-social">
+            <li><a href="#" class="telegram-link">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#viber"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+      <form method="post" class="form-search">
+        <label>
+          <input type="text" placeholder="Поиск: например, карниз" name="search">
+        </label>
+        <button type="submit" class="btn btn-accent">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+          <span class="btn-text">Найти</span>
+        </button>
+      </form>
+
+      <div class="mobile-box">
+        <div class="btn-search"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></div>
+
+        <a href="#" class="header-links fill-none">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#heart"></use>
+          </svg>
+          <span class="header-links__val">23</span>
+        </a>
+        <a href="#" class="header-links">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#basket"></use>
+          </svg>
+          <span class="header-links__val">1</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container">
+      <ul class="menu">
+        <li class="dropdown"><a href="#" class="menu-link dropdown-toggle">Карнизы</a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Карнизы гладкие</a>
+            <a href="#" class="dropdown-item">Карнизы световые</a>
+          </div>
+        </li>
+        <li class="dropdown"><a href="#" class="menu-link dropdown-toggle">Молдинги</a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Карнизы гладкие</a>
+            <a href="#" class="dropdown-item">Карнизы световые</a>
+          </div>
+        </li>
+        <li class="dropdown"><a href="#" class="menu-link dropdown-toggle">Плинтуса</a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Карнизы гладкие</a>
+            <a href="#" class="dropdown-item">Карнизы световые</a>
+          </div>
+        </li>
+        <li><a href="#" class="menu-link">Рамки</a></li>
+        <li><a href="#" class="menu-link">Середники</a></li>
+        <li><a href="#" class="menu-link">Узоры</a></li>
+        <li><a href="#" class="menu-link">Розетки</a></li>
+      </ul>
+
+      <a href="#" class="header-links">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#user"></use>
+        </svg>
+      </a>
+      <a href="#" class="header-links fill-none">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#heart"></use>
+        </svg>
+        <span class="header-links__val">23</span>
+      </a>
+      <a href="#" class="header-links">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#basket"></use>
+        </svg>
+        <span class="header-links__val">1</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="page catalog-page">
+  <div class="container">
+    <ul class="breadcrumb">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="catalog.html">Каталог лепнины</a></li>
+      <li><span>Молдинги угловые</span></li>
+    </ul>
+  </div>
+
+  <div class="title-line">
+    <div class="container">
+      <h1>Молдинги угловые</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="filter-wrapper">
+      <div class="filter-box">
+        <select name="select" class="select">
+          <option value="Высота">Высота</option>
+          <option value="Высота">Высота</option>
+          <option value="Высота">Высота</option>
+        </select>
+      </div>
+      <div class="filter-box">
+        <select name="select" class="select">
+          <option value="Глубина">Глубина</option>
+          <option value="Глубина">Глубина</option>
+          <option value="Глубина">Глубина</option>
+        </select>
+      </div>
+      <div class="result-filter">48 товаров(-а)</div>
+
+      <div class="sorting-box">
+        <p>Сортировать по:</p>
+        <select name="select" class="select">
+          <option value="Популярности">Популярности</option>
+          <option value="Популярности">Популярности</option>
+          <option value="Популярности">Популярности</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+     <div class="col-25 mb-40"><div class="product-card">
+         <ul class="list-tags">
+           <li class="bg-green">Новинка</li>
+         </ul>
+         <a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+         <div class="product-card__body">
+           <a href="product.html" class="product-card__title">Молдинг угловой My-76</a>
+           <div class="price-wrapper">
+             <div class="price">170 <span class="currency">₽</span></div>
+           </div>
+           <ul class="list-characteristics">
+             <li>
+               <p>Высота</p>
+               <span>10 см</span>
+             </li>
+             <li>
+               <p>Глубина</p>
+               <span>1 см</span>
+             </li>
+             <li>
+               <p>Материал</p>
+               <span>Гипс</span>
+             </li>
+           </ul>
+           <div class="button-group">
+             <a href="#" class="btn btn-accent">В корзину</a>
+             <a href="#" class="btn btn-favorite fill-none">
+               <svg class="svg-icon">
+                 <use xlink:href="img/sprite.svg#heart"></use>
+               </svg>
+             </a>
+           </div>
+         </div>
+       </div></div>
+      <div class="col-25 mb-40"><div class="product-card">
+        <ul class="list-tags">
+          <li class="bg-green">Новинка</li>
+        </ul>
+        <a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+        <div class="product-card__body">
+          <a href="product.html" class="product-card__title">Молдинг угловой My-76</a>
+          <div class="price-wrapper">
+            <div class="price">170 <span class="currency">₽</span></div>
+          </div>
+          <ul class="list-characteristics">
+            <li>
+              <p>Высота</p>
+              <span>10 см</span>
+            </li>
+            <li>
+              <p>Глубина</p>
+              <span>1 см</span>
+            </li>
+            <li>
+              <p>Материал</p>
+              <span>Гипс</span>
+            </li>
+          </ul>
+          <div class="button-group">
+            <a href="#" class="btn btn-accent">В корзину</a>
+            <a href="#" class="btn btn-favorite fill-none">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div></div>
+      <div class="col-25 mb-40"><div class="product-card">
+        <ul class="list-tags">
+          <li class="bg-green">Новинка</li>
+        </ul>
+        <a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+        <div class="product-card__body">
+          <a href="product.html" class="product-card__title">Молдинг угловой My-76</a>
+          <div class="price-wrapper">
+            <div class="price">170 <span class="currency">₽</span></div>
+          </div>
+          <ul class="list-characteristics">
+            <li>
+              <p>Высота</p>
+              <span>10 см</span>
+            </li>
+            <li>
+              <p>Глубина</p>
+              <span>1 см</span>
+            </li>
+            <li>
+              <p>Материал</p>
+              <span>Гипс</span>
+            </li>
+          </ul>
+          <div class="button-group">
+            <a href="#" class="btn btn-accent">В корзину</a>
+            <a href="#" class="btn btn-favorite fill-none">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div></div>
+      <div class="col-25 mb-40"><div class="product-card">
+        <ul class="list-tags">
+          <li class="bg-green">Новинка</li>
+        </ul>
+        <a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+        <div class="product-card__body">
+          <a href="product.html" class="product-card__title">Молдинг угловой My-76</a>
+          <div class="price-wrapper">
+            <div class="price">170 <span class="currency">₽</span></div>
+          </div>
+          <ul class="list-characteristics">
+            <li>
+              <p>Высота</p>
+              <span>10 см</span>
+            </li>
+            <li>
+              <p>Глубина</p>
+              <span>1 см</span>
+            </li>
+            <li>
+              <p>Материал</p>
+              <span>Гипс</span>
+            </li>
+          </ul>
+          <div class="button-group">
+            <a href="#" class="btn btn-accent">В корзину</a>
+            <a href="#" class="btn btn-favorite fill-none">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div></div>
+      <div class="col-25 mb-40"><div class="product-card">
+        <ul class="list-tags">
+          <li class="bg-green">Новинка</li>
+        </ul>
+        <a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+        <div class="product-card__body">
+          <a href="product.html" class="product-card__title">Молдинг угловой My-76</a>
+          <div class="price-wrapper">
+            <div class="price">170 <span class="currency">₽</span></div>
+          </div>
+          <ul class="list-characteristics">
+            <li>
+              <p>Высота</p>
+              <span>10 см</span>
+            </li>
+            <li>
+              <p>Глубина</p>
+              <span>1 см</span>
+            </li>
+            <li>
+              <p>Материал</p>
+              <span>Гипс</span>
+            </li>
+          </ul>
+          <div class="button-group">
+            <a href="#" class="btn btn-accent">В корзину</a>
+            <a href="#" class="btn btn-favorite fill-none">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div></div>
+      <div class="col-25 mb-40"><div class="product-card">
+        <ul class="list-tags">
+          <li class="bg-green">Новинка</li>
+        </ul>
+        <a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+        <div class="product-card__body">
+          <a href="product.html" class="product-card__title">Молдинг угловой My-76</a>
+          <div class="price-wrapper">
+            <div class="price">170 <span class="currency">₽</span></div>
+          </div>
+          <ul class="list-characteristics">
+            <li>
+              <p>Высота</p>
+              <span>10 см</span>
+            </li>
+            <li>
+              <p>Глубина</p>
+              <span>1 см</span>
+            </li>
+            <li>
+              <p>Материал</p>
+              <span>Гипс</span>
+            </li>
+          </ul>
+          <div class="button-group">
+            <a href="#" class="btn btn-accent">В корзину</a>
+            <a href="#" class="btn btn-favorite fill-none">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div></div>
+      <div class="col-25 mb-40"><div class="product-card">
+        <ul class="list-tags">
+          <li class="bg-green">Новинка</li>
+        </ul>
+        <a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+        <div class="product-card__body">
+          <a href="product.html" class="product-card__title">Молдинг угловой My-76</a>
+          <div class="price-wrapper">
+            <div class="price">170 <span class="currency">₽</span></div>
+          </div>
+          <ul class="list-characteristics">
+            <li>
+              <p>Высота</p>
+              <span>10 см</span>
+            </li>
+            <li>
+              <p>Глубина</p>
+              <span>1 см</span>
+            </li>
+            <li>
+              <p>Материал</p>
+              <span>Гипс</span>
+            </li>
+          </ul>
+          <div class="button-group">
+            <a href="#" class="btn btn-accent">В корзину</a>
+            <a href="#" class="btn btn-favorite fill-none">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div></div>
+      <div class="col-25 mb-40"><div class="product-card">
+        <ul class="list-tags">
+          <li class="bg-green">Новинка</li>
+        </ul>
+        <a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+        <div class="product-card__body">
+          <a href="product.html" class="product-card__title">Молдинг угловой My-76</a>
+          <div class="price-wrapper">
+            <div class="price">170 <span class="currency">₽</span></div>
+          </div>
+          <ul class="list-characteristics">
+            <li>
+              <p>Высота</p>
+              <span>10 см</span>
+            </li>
+            <li>
+              <p>Глубина</p>
+              <span>1 см</span>
+            </li>
+            <li>
+              <p>Материал</p>
+              <span>Гипс</span>
+            </li>
+          </ul>
+          <div class="button-group">
+            <a href="#" class="btn btn-accent">В корзину</a>
+            <a href="#" class="btn btn-favorite fill-none">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div></div>
+      <div class="col-25 mb-40"><div class="product-card">
+        <ul class="list-tags">
+          <li class="bg-green">Новинка</li>
+        </ul>
+        <a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+        <div class="product-card__body">
+          <a href="product.html" class="product-card__title">Молдинг угловой My-76</a>
+          <div class="price-wrapper">
+            <div class="price">170 <span class="currency">₽</span></div>
+          </div>
+          <ul class="list-characteristics">
+            <li>
+              <p>Высота</p>
+              <span>10 см</span>
+            </li>
+            <li>
+              <p>Глубина</p>
+              <span>1 см</span>
+            </li>
+            <li>
+              <p>Материал</p>
+              <span>Гипс</span>
+            </li>
+          </ul>
+          <div class="button-group">
+            <a href="#" class="btn btn-accent">В корзину</a>
+            <a href="#" class="btn btn-favorite fill-none">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div></div>
+      <div class="col-25 mb-40"><div class="product-card">
+        <ul class="list-tags">
+          <li class="bg-green">Новинка</li>
+        </ul>
+        <a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+        <div class="product-card__body">
+          <a href="product.html" class="product-card__title">Молдинг угловой My-76</a>
+          <div class="price-wrapper">
+            <div class="price">170 <span class="currency">₽</span></div>
+          </div>
+          <ul class="list-characteristics">
+            <li>
+              <p>Высота</p>
+              <span>10 см</span>
+            </li>
+            <li>
+              <p>Глубина</p>
+              <span>1 см</span>
+            </li>
+            <li>
+              <p>Материал</p>
+              <span>Гипс</span>
+            </li>
+          </ul>
+          <div class="button-group">
+            <a href="#" class="btn btn-accent">В корзину</a>
+            <a href="#" class="btn btn-favorite fill-none">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div></div>
+      <div class="col-25 mb-40"><div class="product-card">
+        <ul class="list-tags">
+          <li class="bg-green">Новинка</li>
+        </ul>
+        <a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+        <div class="product-card__body">
+          <a href="product.html" class="product-card__title">Молдинг угловой My-76</a>
+          <div class="price-wrapper">
+            <div class="price">170 <span class="currency">₽</span></div>
+          </div>
+          <ul class="list-characteristics">
+            <li>
+              <p>Высота</p>
+              <span>10 см</span>
+            </li>
+            <li>
+              <p>Глубина</p>
+              <span>1 см</span>
+            </li>
+            <li>
+              <p>Материал</p>
+              <span>Гипс</span>
+            </li>
+          </ul>
+          <div class="button-group">
+            <a href="#" class="btn btn-accent">В корзину</a>
+            <a href="#" class="btn btn-favorite fill-none">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div></div>
+      <div class="col-25 mb-40"><div class="product-card">
+        <ul class="list-tags">
+          <li class="bg-green">Новинка</li>
+        </ul>
+        <a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+        <div class="product-card__body">
+          <a href="product.html" class="product-card__title">Молдинг угловой My-76</a>
+          <div class="price-wrapper">
+            <div class="price">170 <span class="currency">₽</span></div>
+          </div>
+          <ul class="list-characteristics">
+            <li>
+              <p>Высота</p>
+              <span>10 см</span>
+            </li>
+            <li>
+              <p>Глубина</p>
+              <span>1 см</span>
+            </li>
+            <li>
+              <p>Материал</p>
+              <span>Гипс</span>
+            </li>
+          </ul>
+          <div class="button-group">
+            <a href="#" class="btn btn-accent">В корзину</a>
+            <a href="#" class="btn btn-favorite fill-none">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div></div>
+      <div class="col-25 mb-40"><div class="product-card">
+        <ul class="list-tags">
+          <li class="bg-green">Новинка</li>
+        </ul>
+        <a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+        <div class="product-card__body">
+          <a href="product.html" class="product-card__title">Молдинг угловой My-76</a>
+          <div class="price-wrapper">
+            <div class="price">170 <span class="currency">₽</span></div>
+          </div>
+          <ul class="list-characteristics">
+            <li>
+              <p>Высота</p>
+              <span>10 см</span>
+            </li>
+            <li>
+              <p>Глубина</p>
+              <span>1 см</span>
+            </li>
+            <li>
+              <p>Материал</p>
+              <span>Гипс</span>
+            </li>
+          </ul>
+          <div class="button-group">
+            <a href="#" class="btn btn-accent">В корзину</a>
+            <a href="#" class="btn btn-favorite fill-none">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div></div>
+      <div class="col-25 mb-40"><div class="product-card">
+        <ul class="list-tags">
+          <li class="bg-green">Новинка</li>
+        </ul>
+        <a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+        <div class="product-card__body">
+          <a href="product.html" class="product-card__title">Молдинг угловой My-76</a>
+          <div class="price-wrapper">
+            <div class="price">170 <span class="currency">₽</span></div>
+          </div>
+          <ul class="list-characteristics">
+            <li>
+              <p>Высота</p>
+              <span>10 см</span>
+            </li>
+            <li>
+              <p>Глубина</p>
+              <span>1 см</span>
+            </li>
+            <li>
+              <p>Материал</p>
+              <span>Гипс</span>
+            </li>
+          </ul>
+          <div class="button-group">
+            <a href="#" class="btn btn-accent">В корзину</a>
+            <a href="#" class="btn btn-favorite fill-none">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div></div>
+      <div class="col-25 mb-40"><div class="product-card">
+        <ul class="list-tags">
+          <li class="bg-green">Новинка</li>
+        </ul>
+        <a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+        <div class="product-card__body">
+          <a href="product.html" class="product-card__title">Молдинг угловой My-76</a>
+          <div class="price-wrapper">
+            <div class="price">170 <span class="currency">₽</span></div>
+          </div>
+          <ul class="list-characteristics">
+            <li>
+              <p>Высота</p>
+              <span>10 см</span>
+            </li>
+            <li>
+              <p>Глубина</p>
+              <span>1 см</span>
+            </li>
+            <li>
+              <p>Материал</p>
+              <span>Гипс</span>
+            </li>
+          </ul>
+          <div class="button-group">
+            <a href="#" class="btn btn-accent">В корзину</a>
+            <a href="#" class="btn btn-favorite fill-none">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div></div>
+      <div class="col-25 mb-40"><div class="product-card">
+        <ul class="list-tags">
+          <li class="bg-green">Новинка</li>
+        </ul>
+        <a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+        <div class="product-card__body">
+          <a href="product.html" class="product-card__title">Молдинг угловой My-76</a>
+          <div class="price-wrapper">
+            <div class="price">170 <span class="currency">₽</span></div>
+          </div>
+          <ul class="list-characteristics">
+            <li>
+              <p>Высота</p>
+              <span>10 см</span>
+            </li>
+            <li>
+              <p>Глубина</p>
+              <span>1 см</span>
+            </li>
+            <li>
+              <p>Материал</p>
+              <span>Гипс</span>
+            </li>
+          </ul>
+          <div class="button-group">
+            <a href="#" class="btn btn-accent">В корзину</a>
+            <a href="#" class="btn btn-favorite fill-none">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="w-100">
+      <a href="#" class="btn-load">Показать ещё</a>
+    </div>
+
+    <ul class="pagination">
+      <li><a href="#"><svg class="svg-icon fill-none"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></a></li>
+      <li><a href="#" class="active">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">6</a></li>
+      <li><a href="#"><svg class="svg-icon fill-none"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></a></li>
+    </ul>
+  </div>
+</div>
+
+
+<section class="interior bg-beige">
+  <div class="container">
+    <h2>Карнизы гладкие в интерьере</h2>
+
+    <div class="row">
+      <div class="col-50 mb-40">
+        <a href="img/gallery1.png" class="interior-item" data-fancybox="images">
+          <img src="img/gallery1.png" alt="">
+          <span class="interior-item__val">+ 12 фотографий</span>
+        </a>
+      </div>
+
+      <div class="col-25 mb-40">
+        <a href="img/gallery2.png" class="interior-item" data-fancybox="images">
+          <img src="img/gallery2.png" alt="">
+          <span class="interior-item__val">+ 12 фотографий</span>
+        </a>
+      </div>
+
+      <div class="col-25 mb-40">
+        <a href="img/gallery3.png" class="interior-item" data-fancybox="images">
+          <img src="img/gallery3.png" alt="">
+          <span class="interior-item__val">+ 12 фотографий</span>
+        </a>
+      </div>
+
+      <div class="col-25 mb-40">
+        <a href="img/gallery4.png" class="interior-item" data-fancybox="images">
+          <img src="img/gallery4.png" alt="">
+          <span class="interior-item__val">+ 12 фотографий</span>
+        </a>
+      </div>
+
+      <div class="col-25 mb-40">
+        <a href="img/gallery5.png" class="interior-item" data-fancybox="images">
+          <img src="img/gallery5.png" alt="">
+          <span class="interior-item__val">+ 12 фотографий</span>
+        </a>
+      </div>
+
+      <div class="col-25 mb-40">
+        <a href="img/gallery6.png" class="interior-item" data-fancybox="images">
+          <img src="img/gallery6.png" alt="">
+          <span class="interior-item__val">+ 12 фотографий</span>
+        </a>
+      </div>
+
+      <div class="col-25 mb-40">
+        <a href="img/gallery7.png" class="interior-item" data-fancybox="images">
+          <img src="img/gallery7.png" alt="">
+          <span class="interior-item__val">+ 12 фотографий</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-box">
+        <h3>Каталог</h3>
+        <div class="footer-menu-wrap">
+          <ul class="footer-menu">
+            <li><a href="#">Карнизы гладкие</a></li>
+            <li><a href="#">Карнизы световые</a></li>
+            <li><a href="#">Молдинги гладкие</a></li>
+            <li><a href="#">Молдинги угловые</a></li>
+            <li><a href="#">Плинтуса напольные</a></li>
+          </ul>
+          <ul class="footer-menu">
+            <li><a href="#">Плинтуса световые</a></li>
+            <li><a href="#">Рамки</a></li>
+            <li><a href="#">Середники</a></li>
+            <li><a href="#">Узоры</a></li>
+            <li><a href="#">Розетки</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-box">
+        <h3>Покупателям</h3>
+        <ul class="footer-menu">
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">Монтаж</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Наши работы</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-box">
+        <a href="tel:+74957777777" class="phone">+7 (495) 777-77-77</a>
+        <div class="schedule">Пн-Пт 9:00-18:00</div>
+        <div class="address">Одинцовский район, д. Малые Вяземы, дом 104 (Можайское шоссе)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="copyright">© 1 частная лепная мастерская, 2021</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

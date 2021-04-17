@@ -1,0 +1,260 @@
+@import "vars"
+
+
+
+.filter-wrapper
+  width: 100%
+  margin: 0 0 20px
+  padding: 0 0 18px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  border-bottom: 1px solid #DDDDDD
+
+.result-filter
+  margin: 0 20px 0 auto
+  color: #9A9A9A
+  font-size: 14px
+  font-weight: 500
+
+.filter-box, .sorting-box
+  margin: 0 0 0 20px
+  padding: 10px 20px
+  border: 1px solid #DDDDDD
+    radius: 3px
+  background: #fff
+
+.filter-box
+  &:first-child
+    margin: 0
+
+.sorting-box
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  color: #9A9A9A
+  font-size: 16px
+  font-weight: 500
+  margin: 0
+  .select
+    width: 160px
+    margin: 0 0 0 8px
+
+.select
+  appearance: none
+  font-size: 16px
+  font-weight: 500
+  height: auto
+  padding: 0 24px 0 0
+  cursor: pointer
+  background: url("../img/arrow-bottom-grey.svg") no-repeat right center
+    size: 10px
+
+.interior
+  padding: 60px 0 20px
+
+.interior-item
+  width: 100%
+  position: relative
+  height: 260px
+  overflow: hidden
+  color: #fff
+  font-size: 18px
+  font-weight: 600
+  border-radius: 3px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &__val
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: fit-content
+    border-bottom: 1px solid #fff
+    padding: 0 0 4px
+    opacity: 0
+    transition: .3s ease
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    opacity: 0
+    background: rgba(38, 36, 34, 0.6)
+    display: inline-block
+    transition: .3s ease
+  &:hover
+    &:before
+      opacity: 1
+    .interior-item__val
+      opacity: 1
+
+.product-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.product-images
+  max-width: 560px
+  width: 100%
+
+.product-information
+  width: calc(100% - 560px)
+  padding: 0 0 0 40px
+  .price-wrapper
+    margin: 16px 0 40px
+    font-size: 48px
+    .currency
+      font-size: 36px
+  .button-group
+    justify-content: space-between
+    .btn
+      height: 60px
+      font-size: 20px
+      padding: 0 10px
+      max-width: 260px
+      width: 100%
+      margin: 0 0 20px
+
+
+.characteristics-box
+  margin: 20px 0 40px
+  width: 100%
+
+.list-characteristics-product
+  width: 100%
+  margin: 19px 0 0
+  li
+    width: 100%
+    position: relative
+    margin: 0 0 10px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 3px
+      z-index: -1
+      border-bottom: 1px dashed #9A9A9A
+      width: 100%
+      height: 1px
+    p, span
+      position: relative
+      background: #fff
+      z-index: 1
+    span
+      display: inline-block
+      font-weight: 600
+    &:last-child
+      margin: 0
+
+
+.product-slider
+  .slick-arrow
+    z-index: 1
+    position: absolute
+    top: 50%
+    transform: translate(0,-50%)
+    width: 23px
+    height: 42px
+    stroke: #DDDDDD
+    &:hover, &:focus
+      svg
+        stroke: #fff
+  .slick-prev
+    left: 18px
+  .slick-next
+    right: 18px
+
+.product-slider__img
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 560px
+  img
+    width: 100%
+
+.product-preview
+  margin: 12px 0 0
+  .slick-current
+    .product-preview__item
+      border-color: $accent
+
+.product-preview__item
+  width: 102px
+  height: 102px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 12px 0 0
+  overflow: hidden
+  border: 2px solid transparent
+  cursor: pointer
+  transition: .3s ease
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.product-name
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  h1
+    width: auto
+    margin: 0 40px 0 0
+
+.status-availability
+  font-weight: 600
+  margin: 0 0 12px
+
+.delivery-wrap
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  background: #fff
+  border: 1px solid #DDDDDD
+    radius: 3px
+  padding: 20px 20px 14px
+
+.delivery-item
+  width: 47%
+  display: flex
+  align-items: flex-start
+  span
+    display: block
+    color: #9A9A9A
+    margin: 4px 0 0
+  h4
+    font-weight: 600
+    margin: 0 0 9px
+    border-bottom: 1px solid #000
+    width: fit-content
+
+.delivery-item__item
+  width: 32px
+  height: 32px
+  min-width: 32px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.delivery-item__content
+  width: calc(100% - 32px)
+  padding: 0 0 0 12px
+
+.product-page
+  padding: 20px 0 60px

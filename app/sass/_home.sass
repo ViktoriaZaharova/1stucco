@@ -1,0 +1,250 @@
+@import "vars"
+
+.home
+  padding: 141px 0 223px
+  background: url("../img/bg1.png") no-repeat center
+    size: cover
+  .container
+    flex-direction: column
+    align-items: center
+  h1
+    margin: 0 auto 38px
+    font-size: 52px
+    max-width: 625px
+  .btn
+    height: 60px
+
+//section-catalog
+.section-catalog
+  padding: 120px 0 20px
+
+.catalog-box
+  background: #fff
+  border-radius: 3px
+  overflow: hidden
+  width: 100%
+  transition: .3s ease
+  &:hover
+    box-shadow: 0px 0px 22px rgba(99, 93, 90, 0.2)
+  &__img
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 240px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    padding: 20px 19px
+  &__title
+    font-weight: 600
+    color: #000
+  &__text
+    font-size: 14px
+    font-weight: 500
+    color: #9A9A9A
+    margin: 8px 0 0
+
+//section-receipts
+.product-card
+  width: 100%
+  max-width: 260px
+  margin: 0 auto
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25)
+  background: #fff
+  position: relative
+  transition: .3s ease
+  cursor: pointer
+  &:hover
+    box-shadow: 0px 0px 22px rgba(99, 93, 90, 0.2)
+  &__img
+    height: 260px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    padding: 16px
+  &__title
+    color: #000
+    font-weight: 600
+    margin: 0 0 10px
+  .btn-favorite
+    margin: 0 0 0 auto
+  .list-tags
+    position: absolute
+    left: 0
+    top: 0
+    padding: 10px
+
+.price-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 26px
+  font-weight: 600
+
+.currency
+  display: inline-block
+  font-size: 20px
+
+.new-price
+  color: #E64155
+
+.old-price
+  font-size: 20px
+  text-decoration: line-through
+  color: #9A9A9A
+  margin: 0 0 0 10px
+  .currency
+    font-size: 16px
+
+
+.list-tags
+  width: 100%
+  font-size: 14px
+  font-weight: bold
+  li
+    width: fit-content
+    border-radius: 3px
+    color: #fff
+    padding: 6px 16px
+    margin: 0 10px 5px 0
+    &:last-child
+      margin-right: 0
+
+.list-characteristics
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 38px 0 20px
+  font-size: 14px
+  font-weight: 500
+  li
+    span
+      color: #9A9A9A
+      display: inline-block
+      margin: 5px 0 0
+
+
+.btn-favorite
+  width: 32px
+  height: 32px
+  display: flex
+  align-items: center
+  justify-content: center
+  stroke: $accent
+  padding: 0
+  transition: .3s ease
+  &:hover, &:focus
+    stroke: $hover
+    fill: $hover
+
+.btn-favorite.active
+  stroke: $hover
+  fill: $hover
+
+.receipts-slider, .sales-slider
+  .product-card
+    margin: 20px auto
+
+.section-receipts
+  h2
+    margin: 0 auto 18px
+
+//production
+.map
+  width: 100%
+  height: 520px
+
+.contacts-box
+  margin: 40px 0 0
+  padding: 0 0 0 40px
+  width: 25%
+  color: #9A9A9A
+  border-left: 1px solid #DDDDDD
+  &:first-child
+    border: none
+    padding: 0
+  p
+    line-height: 150%
+  h3
+    color: #000
+    font-size: 24px
+    font-weight: 600
+    margin: 0 0 20px
+  .phone
+    font-size: 24px
+    font-weight: 600
+    color: #000
+    margin: 0 0 12px
+  .list-social
+    margin: 18px 0 0
+
+.list-schedule
+  line-height: 150%
+  li
+    width: 100%
+    display: flex
+    align-items: center
+    p
+      margin: 0 40px 0 0
+      min-width: 50px
+
+
+//seo-section
+.seo-section
+  h3
+    margin: 0 0 30px
+
+.box-text
+  line-height: 150%
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+  ul
+    margin: 12px 0 20px
+    &:last-child
+      margin-bottom: 0
+
+.insert
+  margin: 40px 0
+  display: flex
+  align-items: center
+  font-weight: 500
+  font-style: italic
+  max-width: 860px
+  width: 100%
+  &:before
+    content: ''
+    display: inline-block
+    margin: 0 20px 0 0
+    width: 31px
+    min-width: 31px
+    height: 59px
+    background: url("../img/decor2.svg") no-repeat center
+      size: contain
+
+.image-signature
+  margin: 16px 0 0
+  color: #635D5A
+  font-style: italic
+
+.img-wrapper
+  max-width: 859px
+  height: 360px
+  overflow: hidden
+  width: 100%
+  display: flex
+  align-items: center
