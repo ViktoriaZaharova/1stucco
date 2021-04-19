@@ -39,20 +39,60 @@
   margin: 0
   .select
     width: 160px
-    margin: 0 0 0 8px
+  p
+    margin: 0 8px 0 0
 
-.select
-  appearance: none
-  font-size: 16px
-  font-weight: 500
+.select2-search--dropdown
+  display: none
+
+//.select
+//  appearance: none
+//  font-size: 16px
+//  font-weight: 500
+//  height: auto
+//  padding: 0 24px 0 0
+//  cursor: pointer
+//  background: url("../img/arrow-bottom-grey.svg") no-repeat right center
+//    size: 10px
+
+.select2-container--default .select2-selection--single
+  border: none
+    radius: 0
+  color: #000000
   height: auto
-  padding: 0 24px 0 0
-  cursor: pointer
+  line-height: normal
+  display: flex
+  align-items: center
+
+.select2-container--default .select2-selection--single .select2-selection__rendered
+  color: #000
+
+
+
+.select2-container .select2-selection--single .select2-selection__rendered
+  padding: 0
+
+.select2-container--default .select2-selection--single .select2-selection__arrow
   background: url("../img/arrow-bottom-grey.svg") no-repeat right center
-    size: 10px
+    size: contain
+  border: none
+  width: 10px
+  height: 7px
+  right: 0
+  top: 50%
+  transform: translate(0,-50%)
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b
+  display: none
 
 .interior
   padding: 60px 0 20px
+
+.interior-wrap
+  width: 100%
+
+.interior-item-hidden
+  display: none
 
 .interior-item
   width: 100%

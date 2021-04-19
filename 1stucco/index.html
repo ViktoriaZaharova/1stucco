@@ -19,7 +19,6 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -28,10 +27,9 @@
 <body>
 
 <div class="mobile-menu">
-
+  <div class="btn-close"></div>
   <div class="mobile-menu__wrap">
     <div class="mobile-menu__head">
-      <div class="btn-close"></div>
       <h4>Категории</h4>
     </div>
     <ul class="menu">
@@ -172,11 +170,7 @@
       </form>
 
       <div class="mobile-box">
-        <div class="btn-search">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#search"></use>
-          </svg>
-        </div>
+        <div class="btn-search"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></div>
 
         <a href="#" class="header-links fill-none">
           <svg class="svg-icon">
@@ -242,125 +236,127 @@
   </div>
 </header>
 
-<div class="page product-page">
+<main class="home">
   <div class="container">
-    <ul class="breadcrumb">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html">Каталог лепнины</a></li>
-      <li><a href="#">Молдинги угловые</a></li>
-      <li><span>Молдинг угловой Му-76</span></li>
-    </ul>
+    <h1>Лепнина для отделки интерьера квартиры</h1>
+    <a href="catalog.html" class="btn btn-accent">
+      <span class="btn-text">Перейти в каталог</span><span class="btn-icon"><svg class="svg-icon"><use
+        xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+    </a>
+  </div>
+</main>
 
+<section class="section-catalog bg-beige">
+  <div class="container">
+    <h2>Каталог продукции</h2>
 
-    <div class="product-wrapper">
-      <div class="product-images">
-        <div class="product-slider w-100">
-          <div class="slide">
-            <div class="product-slider__img"><img src="img/product1.png" alt=""></div>
-          </div>
-          <div class="slide">
-            <div class="product-slider__img"><img src="img/product2.png" alt=""></div>
-          </div>
-          <div class="slide">
-            <div class="product-slider__img"><img src="img/product3.png" alt=""></div>
-          </div>
-        </div>
-        <div class="product-preview w-100">
-          <div class="slide">
-            <div class="product-preview__item"><img src="img/product1.png" alt=""></div>
-          </div>
-          <div class="slide">
-            <div class="product-preview__item"><img src="img/product2.png" alt=""></div>
-          </div>
-          <div class="slide">
-            <div class="product-preview__item"><img src="img/product3.png" alt=""></div>
+    <div class="row">
+      <div class="col-50 mb-40">
+        <div class="catalog-box">
+          <a href="#" class="catalog-box__img"><img src="img/cat1.png" alt=""></a>
+          <div class="catalog-box__body">
+            <a href="catalog.html" class="catalog-box__title">Карнизы гладкие</a>
+            <a href="catalog.html" class="catalog-box__text">28 вариантов</a>
           </div>
         </div>
       </div>
-      <div class="product-information">
-        <ul class="list-tags">
-          <li class="bg-green">Новинка</li>
-        </ul>
 
-        <div class="product-name">
-          <h1>Молдинг угловой Му-76</h1>
-          <a href="#" class="btn btn-favorite fill-none">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#heart"></use>
-            </svg>
-          </a>
-        </div>
-
-        <div class="price-wrapper">
-          <div class="price">170 <span class="currency">₽</span></div>
-        </div>
-
-        <div class="status-availability color-green">В наличии</div>
-        <div class="button-group">
-          <a href="#" class="btn btn-accent">Добавить в корзину</a>
-          <a href="#" class="btn btn-border">Купить в 1 клик</a>
-        </div>
-
-        <div class="characteristics-box">
-          <h3>Характеристики</h3>
-          <ul class="list-characteristics-product">
-            <li>
-              <p>Артикул</p>
-              <span>My-76</span>
-            </li>
-            <li>
-              <p>Высота</p>
-              <span>10 см</span>
-            </li>
-            <li>
-              <p>Глубина</p>
-              <span>1 см</span>
-            </li>
-            <li>
-              <p>Материал</p>
-              <span>Гипс</span>
-            </li>
-            <li>
-              <p>Минимальный заказ</p>
-              <span>10 метров</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="delivery-wrap">
-          <div class="delivery-item">
-            <div class="delivery-item__item">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#truck"></use>
-              </svg>
-            </div>
-            <div class="delivery-item__content">
-              <h4>Доставка курьером</h4>
-              <p>послезавтра (вт, 6 апреля)</p><span>2000 ₽ </span>
-            </div>
+      <div class="col-25 mb-40">
+        <div class="catalog-box">
+          <a href="#" class="catalog-box__img"><img src="img/cat2.png" alt=""></a>
+          <div class="catalog-box__body">
+            <a href="catalog.html" class="catalog-box__title">Карнизы световые</a>
+            <a href="catalog.html" class="catalog-box__text">28 вариантов</a>
           </div>
-          <div class="delivery-item">
-            <div class="delivery-item__item">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#auto"></use>
-              </svg>
-            </div>
-            <div class="delivery-item__content">
-              <h4>Самовывоз</h4>
-              <p>завтра (ср, 7 апреля)</p><span>Одинцовский район, д. Малые Вяземы, дом 104 (Можайское шоссе)</span>
-            </div>
+        </div>
+      </div>
+
+      <div class="col-25 mb-40">
+        <div class="catalog-box">
+          <a href="#" class="catalog-box__img"><img src="img/cat3.png" alt=""></a>
+          <div class="catalog-box__body">
+            <a href="catalog.html" class="catalog-box__title">Молдинги гладкие</a>
+            <a href="catalog.html" class="catalog-box__text">28 вариантов</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-25 mb-40">
+        <div class="catalog-box">
+          <a href="#" class="catalog-box__img"><img src="img/cat4.png" alt=""></a>
+          <div class="catalog-box__body">
+            <a href="catalog.html" class="catalog-box__title">Молдинги угловые</a>
+            <a href="catalog.html" class="catalog-box__text">28 вариантов</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-25 mb-40">
+        <div class="catalog-box">
+          <a href="#" class="catalog-box__img"><img src="img/cat5.png" alt=""></a>
+          <div class="catalog-box__body">
+            <a href="catalog.html" class="catalog-box__title">Плинтуса напольные</a>
+            <a href="catalog.html" class="catalog-box__text">28 вариантов</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-50 mb-40">
+        <div class="catalog-box">
+          <a href="#" class="catalog-box__img"><img src="img/cat6.png" alt=""></a>
+          <div class="catalog-box__body">
+            <a href="catalog.html" class="catalog-box__title">Плинтуса световые</a>
+            <a href="catalog.html" class="catalog-box__text">28 вариантов</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-25 mb-40">
+        <div class="catalog-box">
+          <a href="#" class="catalog-box__img"><img src="img/cat7.png" alt=""></a>
+          <div class="catalog-box__body">
+            <a href="catalog.html" class="catalog-box__title">Рамки</a>
+            <a href="catalog.html" class="catalog-box__text">28 вариантов</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-25 mb-40">
+        <div class="catalog-box">
+          <a href="#" class="catalog-box__img"><img src="img/cat8.png" alt=""></a>
+          <div class="catalog-box__body">
+            <a href="catalog.html" class="catalog-box__title">Середники</a>
+            <a href="catalog.html" class="catalog-box__text">28 вариантов</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-25 mb-40">
+        <div class="catalog-box">
+          <a href="#" class="catalog-box__img"><img src="img/cat9.png" alt=""></a>
+          <div class="catalog-box__body">
+            <a href="catalog.html" class="catalog-box__title">Узоры</a>
+            <a href="catalog.html" class="catalog-box__text">28 вариантов</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-25 mb-40">
+        <div class="catalog-box">
+          <a href="#" class="catalog-box__img"><img src="img/cat10.png" alt=""></a>
+          <div class="catalog-box__body">
+            <a href="catalog.html" class="catalog-box__title">Розетки</a>
+            <a href="catalog.html" class="catalog-box__text">28 вариантов</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
-</div>
+</section>
 
 <section class="section-receipts p-60">
   <div class="container">
-    <h2>С этим товаром покупают</h2>
+    <h2>Последние поступления</h2>
 
     <div class="receipts-slider w-100">
       <div class="slide">
@@ -425,8 +421,8 @@
               </li>
             </ul>
             <div class="button-group">
-              <a href="#" class="btn btn-accent">В корзину</a>
-              <a href="#" class="btn btn-favorite fill-none">
+              <a href="#" class="btn btn-blue">В корзину</a>
+              <a href="#" class="btn btn-favorite fill-none active">
                 <svg class="svg-icon">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
@@ -551,19 +547,20 @@
 
 <section class="sales section-receipts p-60">
   <div class="container">
-    <h2>Похожие товары</h2>
+    <h2>Скидки на лепнину</h2>
 
     <div class="sales-slider w-100">
       <div class="slide">
         <div class="product-card">
           <ul class="list-tags">
-            <li class="bg-green">Новинка</li>
+            <li class="bg-red">-11%</li>
           </ul>
           <a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
           <div class="product-card__body">
             <a href="product.html" class="product-card__title">Молдинг угловой My-76</a>
             <div class="price-wrapper">
-              <div class="price">170 <span class="currency">₽</span></div>
+              <div class="new-price">170 <span class="currency">₽</span></div>
+              <div class="old-price">270 <span class="currency">₽</span></div>
             </div>
             <ul class="list-characteristics">
               <li>
@@ -616,8 +613,8 @@
               </li>
             </ul>
             <div class="button-group">
-              <a href="#" class="btn btn-accent">В корзину</a>
-              <a href="#" class="btn btn-favorite fill-none">
+              <a href="#" class="btn btn-blue">В корзину</a>
+              <a href="#" class="btn btn-favorite fill-none active">
                 <svg class="svg-icon">
                   <use xlink:href="img/sprite.svg#heart"></use>
                 </svg>
@@ -739,6 +736,95 @@
   </div>
 </section>
 
+<section class="production p-60">
+  <div class="container">
+    <h2>Производство интерьерной лепнины в Москве</h2>
+    <div class="map" id="map"></div>
+
+    <div class="wrapper">
+      <div class="contacts-box">
+        <h3>Адрес</h3>
+        <div class="address">Одинцовский район, д. Малые Вяземы, дом 104 (Можайское шоссе)</div>
+      </div>
+      <div class="contacts-box">
+        <h3>Время работы производства</h3>
+        <p>с 8:00 до 18:00 <br>без выходных</p>
+      </div>
+      <div class="contacts-box">
+        <h3>Время работы на самовывоз</h3>
+        <ul class="list-schedule">
+          <li>
+            <p>Пн-Пт</p>
+            <span>9:00-18:00</span>
+          </li>
+          <li>
+            <p>Сб</p>
+            <span>9:00-16:00</span>
+          </li>
+        </ul>
+      </div>
+      <div class="contacts-box">
+        <a href="tel:+74957777777" class="phone">+7 (495) 777-77-77</a>
+        <p>Пн-Пт 9:00-18:00 </p>
+        <ul class="list-social">
+          <li><a href="#" class="telegram-link">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#whatsapp"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#viber"></use>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="seo-section p-60 bg-beige">
+  <div class="container">
+    <h2>Производство интерьерной лепнины в Москве</h2>
+    <h3>Лепной декор, в качестве внутреннего и наружного оформления зданий.</h3>
+    <div class="box-text">
+      <p>Лепной декор, в качестве внутреннего и наружного оформления зданий, известен с самых древних времен. Раньше
+        лепные элементы были привилегией знатных домов, религиозных храмов и дворцовых сооружений. В советские времена
+        лепной декор применялся только для наружной отделки зданий общественного значения, при этом сложность,
+        помпезность и уникальность не приветствовались.</p>
+      <p>Сегодня лепнина используется повсеместно, главное – соблюдать простые правила:</p>
+
+      <ul class="list-decor">
+        <li><strong>Мера.</strong>Не стоит перебарщивать с декорированием.</li>
+        <li><strong>Стиль.</strong>Важно придерживаться определенного стиля.</li>
+      </ul>
+      <p>Одни элементы лепного декора пришли к нам из древних времен и актуальны до сих пор, другие — появились
+        благодаря новым идеям дизайнеров и технологическому прогрессу. Сейчас можно изготовлять мельчайшие детали двумя
+        способами: </p>
+      <ul class="list-number">
+        <li>Ручным способом</li>
+        <li>При помощи заливки соответствующего материала в готовый шаблон</li>
+      </ul>
+    </div>
+
+    <div class="insert">
+      <p>Использование шаблонов не подразумевает одинаковый лепной декор в каждом заказе, наоборот — уникальный шаблон
+        в отдельно взятом проекте помогает изготовить лепную отделку быстро, качественно и безукоризненно.</p>
+    </div>
+
+    <div class="img-wrapper">
+      <img src="img/img1.png" alt="">
+    </div>
+    <div class="image-signature">Раньше лепные элементы были привилегией знатных домов, религиозных храмов и дворцовых
+      сооружений
+    </div>
+  </div>
+</section>
 
 <footer>
   <div class="footer-top">
@@ -790,7 +876,8 @@
 <script src="js/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="js/map.js"></script>
 <script src="js/common.js"></script>
 
 </body>
