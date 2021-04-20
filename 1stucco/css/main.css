@@ -618,20 +618,20 @@ a.light-grey:hover {
   position: absolute;
   z-index: 1;
   top: 50%;
-  left: 280px;
+  left: 10px;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  width: 28px;
-  height: 28px;
+  width: 20px;
+  height: 20px;
   cursor: pointer; }
   .btn-close:before, .btn-close:after {
     content: '';
     position: absolute;
-    left: 12px;
+    left: 9px;
     top: 0;
     width: 2px;
     height: 100%;
-    background: #fff;
+    background: #000;
     border-radius: 1px; }
   .btn-close:before {
     -webkit-transform: rotate(45deg);
@@ -645,7 +645,8 @@ a.light-grey:hover {
   text-align: center;
   font-weight: 700;
   padding: 16px 0;
-  background: #F4F2EE; }
+  background: #F4F2EE;
+  position: relative; }
 
 .mobile-box {
   display: none;
@@ -1384,23 +1385,54 @@ footer {
   font-weight: 500;
   margin: 0; }
   .sorting-box .select {
-    width: 160px;
-    margin: 0 0 0 8px; }
+    width: 160px; }
+  .sorting-box p {
+    margin: 0 8px 0 0; }
 
-.select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  font-size: 16px;
-  font-weight: 500;
+.select2-search--dropdown {
+  display: none; }
+
+.select2-container--default .select2-selection--single {
+  border: none;
+    border-radius: 0;
+  color: #000000;
   height: auto;
-  padding: 0 24px 0 0;
-  cursor: pointer;
+  line-height: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #000; }
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding: 0; }
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
   background: url("../img/arrow-bottom-grey.svg") no-repeat right center;
-    background-size: 10px; }
+    background-size: contain;
+  border: none;
+  width: 10px;
+  height: 7px;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%); }
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  display: none; }
 
 .interior {
   padding: 60px 0 20px; }
+
+.interior-wrap {
+  width: 100%; }
+
+.interior-item-hidden {
+  display: none; }
 
 .interior-item {
   width: 100%;

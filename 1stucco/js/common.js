@@ -91,3 +91,5 @@ $('.btn-close').on('click', function () {
 $('.btn-search').on('click', function () {
     $('.form-search').fadeToggle();
 });
+
+$('.select').select2();
