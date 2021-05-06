@@ -1,0 +1,165 @@
+@import "vars"
+
+.overlay
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: 3
+  background: rgba(28, 28, 28, 0.5)
+  display: none
+
+.modal__div
+  position: fixed
+  max-width: 600px
+  width: 100%
+  height: 100%
+  top: 45%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 101
+  overflow: auto
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  display: none
+  opacity: 0
+
+.modal__close
+  position: absolute
+  right: 20px
+  top: 20px
+  width: 21px
+  height: 21px
+  cursor: pointer
+  &:before, &:after
+    content: ''
+    position: absolute
+    top: 10px
+    left: 0
+    border-radius: 1px
+    width: 100%
+    height: 2px
+    background: #000
+  &:before
+    transform: rotate(-45deg)
+  &:after
+    transform: rotate(45deg)
+
+.modal__wrapper
+  background: #fff
+  width: 100%
+  height: auto
+  overflow: auto
+  margin: 50px auto
+  padding: 32px 64px 64px
+  box-sizing: border-box
+  position: relative
+  h2
+    margin: 0 auto 20px
+    font-size: 24px
+    color: #000000
+    font-weight: 600
+    text-align: center
+  .box-text
+    margin: 0 0 32px
+    line-height: 150%
+    font-size: 16px
+  .btn
+    margin: 32px auto 0
+    max-width: 260px
+    width: 100%
+    height: 60px
+    font-size: 20px
+    font-weight: 700
+    padding: 5px
+  .btn-modal-close
+    margin: 64px auto 0
+
+.checkbox
+  width: 100%
+  position: relative
+  display: flex
+  align-items: center
+  margin: 0 0 32px
+  color: #000000
+  font-size: 14px
+  .links
+    color: $accent
+    display: inline-block
+
+.checkbox-inp
+  display: none
+
+.checkbox-custom
+  position: relative
+  border: 1px solid #F09A5E
+    radius: 2px
+  width: 24px
+  height: 24px
+  min-width: 24px
+  margin: 0 12px 0 0
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 12px
+    height: 9px
+    opacity: 0
+    transition: .3s ease
+    background: url("../img/checkbox.svg") no-repeat center
+      size: 100%
+
+.checkbox-inp:checked
+  + .checkbox-custom
+    background: $accent
+    &:before
+      opacity: 1
+
+.form
+  width: 100%
+  label
+    width: 100%
+    margin: 0 0 32px
+  input
+    padding: 0 12px
+    border: 1px solid #DDDDDD
+      radius: 3px
+    color: #000000
+    width: 100%
+    font-size: 16px
+    font-family: $default-font
+    &::placeholder
+      color: #9A9A9A
+
+  .error-label
+    input
+      border: 1px solid #E64155
+
+.input-text
+  display: block
+  width: 100%
+  color: #000000
+  font-size: 16px
+  font-weight: 600
+  margin: 0 0 8px
+
+.error-label
+  input
+    border: 1px solid #E64155
+
+.error-label-text
+  color: #E64155
+  font-size: 12px
+  font-weight: 500
+  margin: 4px 0 0
+
+.modal-icon
+  margin: 0 auto 32px
+  display: flex
+  align-items: center
+  justify-content: center
+
