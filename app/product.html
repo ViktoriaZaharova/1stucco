@@ -797,6 +797,39 @@
 
     <form method="post" class="form">
 
+      <label>
+        <span class="input-text">Ваше имя*</span>
+        <input type="text" name="name" required>
+      </label>
+
+      <label>
+        <span class="input-text">Ваш телефон*</span>
+        <input type="text" name="phone" placeholder="+7 (___) ___-__-__" required></label>
+
+
+      <label class="checkbox">
+        <input class="checkbox-inp" checked type="checkbox" name="checkbox">
+        <span class="checkbox-custom"></span>
+        <span class="label">Я соглашаюсь на обработку <a href="#"
+                                                         class="links color-accent">персональных данных</a></span>
+      </label>
+
+
+      <button type="submit" class="btn btn-accent">Оформить заказ</button>
+    </form>
+  </div>
+</div>
+
+<div class="modal__div" id="oneClick__modal2">
+  <div class="modal__wrapper">
+    <div class="modal__close"></div>
+    <h2>Купить в 1 клик</h2>
+    <div class="box-text">
+      <p>Заполните форму, и наш менеджер свяжется с вами в ближайшее время для оформления заказа.</p>
+    </div>
+
+    <form method="post" class="form">
+
       <label class="error-label">
         <span class="input-text">Ваше имя*</span>
         <input type="text" name="name" required>
@@ -821,6 +854,7 @@
   </div>
 </div>
 
+
 <div class="modal__div" id="thanks__modal">
   <div class="modal__wrapper">
     <div class="modal__close"></div>
@@ -836,6 +870,7 @@
 <!-- Пoдлoжкa -->
 <div class="overlay"></div>
 
+<a href="#oneClick__modal2" class="btn btn-accent open_modal">Купить в 1 клик</a>
 <a href="#thanks__modal" class="btn btn-accent open_modal">Спасибо за заказ!</a>
 
 <script src="js/jquery.min.js"></script>
