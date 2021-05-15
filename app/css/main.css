@@ -1692,6 +1692,25 @@ footer {
 .product-page {
   padding: 20px 0 60px; }
 
+.list-select .dropdown-toggle {
+  padding: 0;
+  color: #000000; }
+  .list-select .dropdown-toggle:after {
+    background: url("../img/arrow-bottom-grey.svg") no-repeat right center;
+      background-size: 100%;
+    margin: 0 0 0 50px;
+    width: 10px;
+    height: 7px; }
+
+.list-select .dropdown {
+  position: relative; }
+  .list-select .dropdown:hover .dropdown-menu {
+    display: block; }
+
+.list-select .dropdown-menu a {
+  color: #000;
+  font-size: 14px; }
+
 .office-gallery {
   max-width: 560px;
   width: 100%; }
