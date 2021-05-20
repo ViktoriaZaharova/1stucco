@@ -92,6 +92,18 @@ $('.btn-search').on('click', function () {
     $('.form-search').fadeToggle();
 });
 
+
+// btn load
+$('.btn-load').on('click', function (e) {
+    e.preventDefault();
+    $(this).parent().siblings('.card-col-wrapper').find('.card-col:hidden').slice(0, 4).slideDown();
+    var onBlock = $('.card-col:hidden').length;
+    if(onBlock <= 0) {
+        $('.btn-load').hide();
+    }
+});
+
+
 $('.select').select2();
 
 $('[name="phone"]').mask('+7 (999) 999-99-99');
@@ -137,3 +149,4 @@ $(function () {
     });
 });
 //end
+
